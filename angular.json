@@ -57,7 +57,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumError": "65kb"
                 }
               ]
             }
@@ -121,8 +121,18 @@
               "devServerTarget": "scssdemo:serve:production"
             }
           }
+        },
+        "analyze": {
+          "builder": "@ngx-builders/analyze:analyze",
+          "options": {
+            "outputPath": "dist/scssdemo"
+          }
         }
       }
-    }},
-  "defaultProject": "scssdemo"
+    }
+  },
+  "defaultProject": "scssdemo",
+  "cli": {
+    "analytics": "b2ec738b-f7a6-4424-a350-b7697bdf200d"
+  }
 }

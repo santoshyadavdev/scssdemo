@@ -1,0 +1,29 @@
+@import 'scss-material-theme';
+
+// spacing
+$spacing-unit: 2px;
+$spacing-base: $spacing-unit * 2;
+$spacing-paragraph: $spacing-base * 3;
+$spacing: $spacing-base * 4;
+$full-width: 100%;
+
+$color-green: #4682b4;
+$color-carbon-gray: #646464;
+$color-black: #000;
+$color-nordic-blue: #1d9bb2;
+$color-red: #e62c27;
+$color-yellow: #fccf46;
+$color-white: #fff;
+$color-gray-1: #f6f7f8;
+$color-gray-2: #ebeef0;
+$color-gray-3: #dde3e6;
+$color-gray-4: #ced5da;
+$color-gray-5: #b6bec1;
+$color-gray-6: #aab1b4;
+$color-gray-7: #9ca2a5;
+$color-gray-8: #878d8f;
+$color-gray-9: #787d7f;
+$color-gray-10: #656a6c;
+$color-gray-11: #55595a;
+$color-gray-12: #414546;          // toasts: information
+$color-gray-13: #2d3031;

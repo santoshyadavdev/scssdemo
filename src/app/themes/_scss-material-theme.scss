@@ -1,0 +1,31 @@
+@import '~@angular/material/theming';
+@import 'scss-material-color-palettes';
+
+$scss-typography: mat-typography-config(
+  $font-family: '"Arial", sans-serif',
+  $body-1: mat-typography-level(14px, 1.25em, 400)
+);
+@include mat-core($scss-typography);
+
+// configure colors
+$scss-app-primary: mat-palette($scss-mat-primary, 700, 200, 900);
+$scss-app-accent: mat-palette($scss-mat-accent, 700, 400, 800);
+$scss-app-warn: mat-palette($scss-mat-warn);
+
+// calculate colors
+$scss-app-theme: mat-light-theme(
+    $scss-app-primary,
+    $scss-app-accent,
+    $scss-app-warn
+);
+
+$foreground: map-get($scss-app-theme, foreground);
+
+// misc variables
+$mat-box-shadow:
+  0 2px 1px -1px rgba(0, 0, 0, .2),
+  0 1px 1px 0 rgba(0, 0, 0, .14),
+  0 1px 3px 0 rgba(0, 0, 0, .12);
+
+// apply configured colors
+@include angular-material-theme($scss-app-theme);
