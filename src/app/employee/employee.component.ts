@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation, HostBinding } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-employee',
   templateUrl: './employee.component.html',
-  styleUrls: ['./employee.component.scss']
+  styleUrls: ['./employee.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class EmployeeComponent {
+
+  @HostBinding('class') class = 'app-employee';
+
   addressForm = this.fb.group({
     company: null,
     firstName: [null, Validators.required],

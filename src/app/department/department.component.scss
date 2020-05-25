@@ -1,5 +1,12 @@
-@import '../themes/scss-variables';
+@import "../themes/scss-variables";
 
-.full-width-table {
-  width: $full-width
+.app-department {
+  h1 {
+    background-color: $color-green;
+    color: $color-white;
+  }
+
+  .full-width-table {
+    width: $full-width;
+  }
 }
